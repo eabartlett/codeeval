@@ -48,3 +48,6 @@ function lcs(s1, s2){
     g2.addNode(s2[i]);
   }
 }
+
+exports.graph = graph;
+exports.node = node;
