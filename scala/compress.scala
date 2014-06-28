@@ -9,7 +9,7 @@ object Main{
         return helper(fl, bl.slice(1, bl.size), count+1, item)
       return helper(fl:::List(count, item), bl.slice(1, bl.size), 1, bl(0))
     }
-    return helper(List[Int](), l.slice(1,l.size), 1, l(0))
+    return helper(List[Int](), l.tail, 1, l.head)
   }
 
   def compress_fold(l: List[Int]): List[Int] = {
